@@ -1,18 +1,93 @@
-header{
-  width:100vw;
-  height:10vh;
-  background:peru;
+:root{
+  font-family: 'Open Sans', sans-serif;
 }
+nav{
+  width:  100vw;
+  min-height: 100px;
+  display: flex;
+  justify-content: space-between;
+  background: #252526;
+}
+
+nav ul{
+  list-style: none;
+  /*background: peru;*/
+  height:100px;
+}
+
+nav ul li{
+  margin: 5px;
+}
+
+nav #nav-links-left{
+  display: flex;
+  align-items: flex-end;
+  color:grey;
+}
+
+nav #nav-links-left{
+  /*first item color it white*/
+}
+
+nav #nav-links-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.inline-block-link-right{
+  position: absolute;
+  bottom: 0;
+  right:  0;
+  background: blue;
+}
+
+nav #win-text{
+  font-size: 2rem;
+  color:lightgrey;
+}
+
+nav #win-img {
+  /*//url("../img/banner.png");*/
+  height: 35px;
+  /*width: 2;*/
+}
+
 main{
-  display:flex;
-  flex-wrap:wrap;
+  display:  flex;
+  flex-wrap:  wrap;
   justify-content: space-around;
 }
 
-section{
-  width:300px;
-  height: 200px;
+main #card{
+  min-width:300px;
+  width: 23vw;
+  min-height: 400px;
+  height: 45vh;
   background: darkslategrey;
-  margin-top: 20px;
   margin:10px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+#card-header{
+  background-image: url("./../img/headshot/images1.jpg");
+  background-size: cover;
+  -webkit-filter: brightness(80%); /* Safari 6.0 - 9.0 */
+  filter: brightness(80%);
+  flex:1;
+}
+
+#card-mid{
+  flex:1;
+  background: yellow;
+}
+
+#card-bottom{
+  flex:1;
+  background: blue;
 }
