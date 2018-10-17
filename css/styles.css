@@ -14,6 +14,7 @@ nav{
 
 nav ul{
   list-style: none;
+  color:skyblue;
 }
 
 nav ul li{
@@ -66,7 +67,7 @@ main{
 main #card{
   min-width:300px;
   width: 23vw;
-  min-height: calc(30vw);
+  min-height: calc(30vw); 
   height: 400px;
   margin:13px;
   margin-bottom: 5vh;
@@ -97,6 +98,11 @@ main #card{
 #card-header-left{
   width:100%;
 }
+.card-header-arrow{
+  height: 40%;
+  background:#eee;
+  border-radius: 50%;
+}
 #card-mid{
   flex:1;
   align-items: center;
@@ -126,6 +132,8 @@ main #card{
   background:#f4f4f4;
   height: 40%;
   padding-top: 10px;
+  padding-left: 5px;
+  padding-right: 10px;
 }
 
 #card-bottom{
@@ -135,4 +143,15 @@ main #card{
   justify-content: space-around;
     padding: 0 0 5% 5%;
   /*background: blue;*/
+}
+
+#card-bottom div:nth-child(1){
+  font-size:.8rem;
+}
+#card-bottom div:nth-child(3){
+  font-size:.8rem;
+}
+#card-bottom div:nth-child(4){
+  font-size:1.7rem;
+  color:skyblue;
 }
